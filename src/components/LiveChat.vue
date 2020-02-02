@@ -25,6 +25,13 @@ export default {
             margin-right: 10px;
         }
     }
+    .align-center {
+        @media(max-width: 1024px){
+        display: block;}
+        .btn{
+            margin-top: 20px;
+        }
+    }
 }
 
 </style>

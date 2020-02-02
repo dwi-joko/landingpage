@@ -3,7 +3,7 @@
         <div class=container>
             <div class="row">
                 <div class=" footer-section footer-top">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 m-hw m-fw">
                         <h5 class="title-footer">hubungi kami</h5>
                         <ul>
                             <li><a href="#">0274-5305505</a></li>
@@ -18,7 +18,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 m-hw m-fw">
                         <h5 class="title-footer">Layanan</h5>
                         <ul>
                             <li><a href="#">Domain</a></li>
@@ -31,7 +31,7 @@
                             <li><a href="#">Program Afiliasi</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 m-hw m-fw">
                         <h5 class="title-footer">Service Hosting</h5>
                         <ul>
                             <li><a href="#">Hosting Murah</a></li>
@@ -43,7 +43,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 m-hw m-fw">
                         <h5 class="title-footer">Tutorial</h5>
                         <ul>
                             <li><a href="#">Knowledgebase</a></li>
@@ -55,7 +55,7 @@
 
 
                 <div class="footer-section footer-middle">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 m-hw m-fw">
                         <h5 class="title-footer">Tentang Kami</h5>
                         <ul>
                             <li><a href="#">Tim Niagahoster</a></li>
@@ -65,7 +65,7 @@
                             <li><a href="#">Kontak Kami</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 m-hw m-fw">
                         <h5 class="title-footer">Kenapa pilih niagahoster</h5>
                         <ul>
                             <li><a href="#">Support Terbaik</a></li>
@@ -75,7 +75,7 @@
                             <li><a href="#">Review Pelanggan</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 m-hw m-fw">
                         <h5 class="title-footer">newsletter</h5>
                         <ul>
                             <li>
@@ -91,7 +91,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-md-3 col-sm-6 col-xs-12 m-hw m-fw">
                         <h5 class="title-footer visibility-hidden">Tutorial</h5>
                         <ul class="socials">
                             <li><a href="#"><span class="icon"><img alt="Vue socials" src="../assets/images/facebook.png"></span></a></li>
@@ -180,15 +180,15 @@ export default {
             li {
                 padding-right: 30px;
                 .icon {
-                    width: 60px;
-                    height: 60px;
+                    width: 55px;
+                    height: 55px;
                     border: 2px solid #fff;
                     border-radius: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     img {
-                        width: 25px;
+                        width: 22px;
                     }
                 }
             }
@@ -199,6 +199,21 @@ export default {
             padding-top: 10px;
             text-align: left;
         }
+        @media(max-width: 768px){
+            display: inline-block;
+            padding-bottom: 30px;
+            .m-hw {
+                max-width: 50%;
+                display: inline-block;
+                vertical-align: text-top;
+                padding-bottom: 30px;
+            }
+        }
+        @media(max-width: 480px){
+            .m-fw{
+                max-width: 100%;
+            }
+        }
 
     }
     .payment{
@@ -208,8 +223,13 @@ export default {
         padding-bottom: 30px;
         ul{
             display: flex;
+            @media(max-width: 768px){
+                display: inline-block;
+            }
             li{
                 padding-right: 20px;
+                display: inline-block;
+                padding-bottom: 20px;
                 .bank-logo {
                     display: flex;
                     align-items: center;
@@ -225,6 +245,15 @@ export default {
         display: flex;
         align-items: baseline;
         padding-bottom: 0;
+        @media(max-width: 768px){
+            display: block;
+            .nb{
+                text-align: center;
+            }
+            ul{
+                padding-top: 20px;
+            }
+        }
         ul{
              li {
                 display: inline-block;

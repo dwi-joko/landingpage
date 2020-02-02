@@ -22,15 +22,15 @@
                 <table class="table-power">
                     <tr>
                         <td><span class="checklist"><img alt="Vue icon" src="../assets/images/check.png"></span></td>
-                        <td><p>max execution time 300s</p></td>
+                        <td><p>post max size 128 MB</p></td>
                     </tr>
                     <tr>
                         <td><span class="checklist"><img alt="Vue icon" src="../assets/images/check.png"></span></td>
-                        <td><p>max execution time 300s</p></td>
+                        <td><p>upload max file size 128 MB</p></td>
                     </tr>
                     <tr>
                         <td><span class="checklist"><img alt="Vue icon" src="../assets/images/check.png"></span></td>
-                        <td> <p>PHP memory limit 1024 MB</p> </td>
+                        <td> <p>max input vars 2500</p> </td>
                     </tr>
                 </table>
                 <!-- <ul>
@@ -57,6 +57,9 @@ export default {
             border-collapse: collapse;
             border: 1px solid #f4f4f4;
             margin: 20px auto;
+            @media(max-width: 480px){
+                width: 100%;
+            }
             tr {
                 td {
                     border-bottom: 1px solid #f4f4f4;

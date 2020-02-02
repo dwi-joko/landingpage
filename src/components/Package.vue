@@ -67,6 +67,9 @@ export default {
     }
     .bottom {
     padding-top: 100px;
+    @media(max-width: 480px){
+        padding: 0;
+    }
 }
 }
 </style>

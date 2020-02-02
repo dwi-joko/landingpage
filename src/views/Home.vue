@@ -7,6 +7,7 @@
     <PowerFull></PowerFull>
     <Package></Package>
     <SupportLaravel></SupportLaravel>
+    <Module></Module>
     <LinuxHosting></LinuxHosting>
     <Share></Share>
     <LiveChat></LiveChat>
@@ -23,6 +24,7 @@ import Pricing from '@/components/Pricing.vue'
 import PowerFull from '@/components/PowerfullPHP.vue'
 import Package from '@/components/Package.vue'
 import SupportLaravel from '@/components/LaravelSupport.vue'
+import Module from '@/components/PHPModule.vue'
 import LinuxHosting from '@/components/LinuxHosting.vue'
 import Share from '@/components/Share.vue'
 import LiveChat from '@/components/LiveChat.vue'
@@ -37,6 +39,7 @@ export default {
     PowerFull,
     Package,
     SupportLaravel,
+    Module,
     LinuxHosting,
     Share,
     LiveChat,

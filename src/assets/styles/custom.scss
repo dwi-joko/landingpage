@@ -6,6 +6,12 @@ ul{
         list-style-type: none;
     }
 }
+button, a{
+    &:hover {
+        opacity: 0.7;
+        text-decoration: none !important;
+    }
+}
 section {
     padding: 50px 0 60px;
 }
@@ -70,8 +76,9 @@ $secondary: $pink;
     text-align: left;
     text-transform: uppercase;
     padding-bottom: 25px;
-    font-size: 16px;
+    font-size: 14px;
     color: #8B8B8B;
+    font-weight: 600;
 }
 
 .w-border-bottom{
@@ -94,6 +101,18 @@ $secondary: $pink;
 .right-image {
     margin-right: -15px;
     text-align: right;
+    @media(max-width:768px){
+        margin-right: 0;
+        text-align: center;
+        img{
+            width: 70% !important;
+        }
+    }
+    @media(max-width:480px){
+        img{
+            width: 100% !important;
+        }
+    }
     img {
         width: 90%;
     }
@@ -117,10 +136,53 @@ $secondary: $pink;
     color: #fff;
 }
 
+.btn-outline-black {
+    border: 2px solid #2d3e50 !important;
+}
+
 .align-center {
     align-items: center;
 }
 
 .visibility-hidden {
     visibility: hidden;
+}
+
+
+// responsive
+section{
+    @media(max-width:768px){
+        .box-wrap {
+            display: block;
+            .m-fw {
+                max-width: 100% !important;
+                display: table;
+            }
+            .text {
+                display: table-cell;
+                .left-text {
+                    text-align: left;
+                    margin-left: -15px;
+                    padding-top: 20px;
+                }
+            }
+            .images {
+                display: table-header-group;
+            }
+        }
+    }
+    @media(max-width: 480px){
+        .row{
+            margin: 0;
+            .left-text {
+                li{
+                    p{
+                        width: 90%;
+                    }
+
+                }
+            }
+        }
+    }
+
 }

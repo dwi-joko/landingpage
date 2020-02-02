@@ -2,7 +2,7 @@
     <div class="header-wrapper">
         <div class="top-header">
             <div class="container">
-                <div class="row">
+                <div class="row box-wrap">
                     <div class="left">
                         <span class="icon"><img alt="Vue icon" src="../assets/images/price.png"></span>
                         <p>gratis ebook 9 cara cerdas menggunakan domain [ x ]</p>
@@ -10,16 +10,22 @@
                     <div class="right ml-auto">
                         <ul>
                             <li>
-                                <span class="icon"><img alt="Vue icon" src="../assets/images/phone.png"></span>
-                                <p>0274-5305505</p>
+                                <a href="#">
+                                    <span class="icon"><img alt="Vue icon" src="../assets/images/phone.png"></span>
+                                    <p>0274-5305505</p>
+                                </a>
                             </li>
                             <li>
-                                <span class="icon"><img alt="Vue icon" src="../assets/images/chat.png"></span>
-                                <p>live chat</p>
+                                <a href="#">
+                                    <span class="icon"><img alt="Vue icon" src="../assets/images/chat.png"></span>
+                                    <p>live chat</p>
+                                </a>
                             </li>
                             <li>
+                                <a href="#">
                                 <span class="icon"><img alt="Vue icon" src="../assets/images/user.svg"></span>
                                 <p>member area</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -28,11 +34,11 @@
         </div>
         <div class="navbar-menu">
             <div class="container">
-                <div class="row">
+                <div class="row box-wrap">
                     <nav class="navbar navbar-expand-lg ">
                         <a class="navbar-brand" href="#"> <img alt="Vue logo" src="../assets/images/niagahoster-logo.png"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"><img alt="Vue logo" src="../assets/images/bars.png"></span>
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -91,19 +97,22 @@ export default {
                 position: relative;
                 top: 15px;
                 li {
-                    display: flex;
-                    padding-left: 20px;
-                    align-items: center;
-                    .icon {
-                        padding-right: 10px;
-                        img {
-                            width: 20px;
+                    a{
+                        display: flex;
+                        padding-left: 20px;
+                        align-items: center;
+                        .icon {
+                            padding-right: 10px;
+                            img {
+                                width: 20px;
+                            }
                         }
-                    }
-                    p{
-                        margin-bottom: 0;
-                        text-transform: capitalize;
-                        font-size: 14px;
+                        p{
+                            margin-bottom: 0;
+                            text-transform: capitalize;
+                            font-size: 14px;
+                        }
+
                     }
                 }
             }
@@ -134,6 +143,11 @@ export default {
                     right: 0;
                     margin: 0 auto;
                     bottom: 0;
+                    @media(max-width: 480px){
+                        border-left: 12px solid transparent;
+                        border-right: 12px solid transparent;
+
+                    }
                 }
             }
             p {
@@ -142,16 +156,83 @@ export default {
                 font-size: 14px;
             }
         }
+
+        @media(max-width: 768px){
+            .box-wrap {
+                display: block;
+                @media(max-width: 480px){
+                    margin: 0;
+                        .right {
+                            border-top: 1px solid #eaeaea;
+                            margin-top: 10px;
+                            ul {
+                                display: inline-block;
+                                li {
+                                    display: inline-block;
+                                    padding: 0 10px;
+                                }
+                            }
+                        }
+                }
+                    .left {
+                    justify-content: center;
+                }
+                .right {
+                    ul {
+                        justify-content: center;
+                        top: 0 !important;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
     }
     .navbar-menu {
         padding: 10px 0;
         border-bottom: 1px solid #f4f4f4;
+        @media(max-width: 480px){
+            .box-wrap {
+                display: block;
+                margin: 0;
+            }
+        }
         .navbar{
             width: 100%;
             padding: 0;
+            @media(max-width:1024px){
+                display: block ;
+            }
+            @media(max-width:768px){
+                display: flex ;
+            }
             .navbar-brand{
                 img{
                     width: 300px;
+                    @media(max-width: 480px){
+                        width: 200px;
+                    }
+                }
+            }
+            .navbar-nav {
+                @media(max-width: 1024px){
+                    margin: 0 auto !important;
+                }
+            }
+            .navbar-toggler {
+                background: #27aae1;
+                padding: 0px;
+                .navbar-toggler-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                img{
+                    width: 20px;
+                }
+            }
+            .navbar-collapse{
+                ul{
+                    padding-top: 20px;
                 }
             }
         }

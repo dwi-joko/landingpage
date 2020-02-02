@@ -34,11 +34,18 @@ export default {
         li {
             display: inline-block;
             padding: 0 70px;
+            @media(max-width: 768px){
+                padding: 20px 30px;
+            }
             .icon {
                 height: 200px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media(max-width: 480px){
+                    height: unset;
+                    padding-bottom: 20px;
+                }
                 img {
                     width: 200px;
                 }

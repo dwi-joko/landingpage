@@ -1,7 +1,7 @@
 <template>
     <section class="share-wrapper">
         <div class="container">
-            <div class="row top-center">
+            <div class="row top-center box-wrap">
                 <h6>Bagikan jika Anda menyukai halaman ini</h6>
                 <div class="share ml-auto">
                     <ul>
@@ -39,9 +39,15 @@ export default {
         .share {
             ul {
                 display: flex;
+                @media(max-width: 480px){
+                    justify-content: center;
+                }
                 li {
                     display: flex;
                     padding-left: 20px;
+                    @media(max-width: 480px){
+                        padding: 20px 10px 0;
+                    }
                     .icon {
                         width: 35px;
                         height: 35px;
@@ -50,6 +56,13 @@ export default {
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        @media(max-width: 480px){
+                            width: 25px;
+                            height: 25px;
+                            img{
+                                width: 15px !important;
+                            }
+                        }
                         img {
                             width: 20px;
                         }

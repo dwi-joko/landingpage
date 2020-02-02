@@ -1,11 +1,10 @@
 <template>
     <section class="hosting-wrapper">
         <div class="container">
-            <div class="row">
-                <h3 class="title">Mendukung Penuh Framework Laravel</h3>
-                <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row box-wrap">
+                <div class="col-md-6 col-sm-6 col-xs-12 m-fw text">
                     <div class="left-text">
-                        <h3>Linux Hosting yang Stabil dengan teknologi LVE</h3>
+                        <h3 class="title">Linux Hosting yang Stabil dengan teknologi LVE</h3>
                         <p class="sub-title">
                             SuperMicro <strong>Intel Xeon 24-Cores</strong>  server dengan RAM <strong>128GB</strong>
                             dan teknologi <strong>LVE CloudLinux</strong> untuk stabilitas server Anda. Dilengkapi dengan <strong>SSD</strong>
@@ -16,7 +15,7 @@
                         <button class="btn btn-rounded btn-solid-blue">Pilih Hosting Anda</button>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-12 m-fw images">
                     <div class="right-image">
                         <img alt="Vue logo" src="../assets/images/image-support.png">
                     </div>
@@ -31,3 +30,18 @@ export default {
     name: 'LinuxHosting'
 }
 </script>
+
+<style lang="scss" scoped>
+.hosting-wrapper{
+    .right-image{
+         img {
+            position: relative;
+            top: 71px;
+            width: 100%;
+            @media(max-width:768px){
+                top: 0;
+            }
+        }
+    }
+}
+</style>

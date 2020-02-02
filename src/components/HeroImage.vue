@@ -1,8 +1,8 @@
 <template>
     <section class="hero-image w-border-bottom">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row box-wrap">
+                <div class="col-sm-6 col-xs-12 col-xs-12 m-fw text">
                     <div class="left-text">
                         <h2><strong>PHP Hosting</strong></h2>
                         <h2>Cepat, handal, penuh dengan modul PHP yang Anda butuhkan</h2>
@@ -26,7 +26,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-sm-6 col-xs-12 col-xs-12 m-fw images">
                     <div class="right-image">
                         <img alt="Vue logo" src="../assets/images/hero-image.svg">
                     </div>
@@ -42,4 +42,5 @@ export default {
 </script>
 
 <style lang="scss">
+
 </style>
